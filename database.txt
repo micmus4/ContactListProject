@@ -1,0 +1,11 @@
+345-231-864;;;Dad;;;Walter;;;White;;;Albaqurque 67;;;true
+000-113-222;;;Emperor;;;Cancellor;;;Palpatine;;;Council;;;true
+875-325-712;;;Gus;;;Gustavo;;;Fring;;;Oh man...;;;true
+444-555-666;;;Maul;;;Darth;;;Maul;;;Everywhere;;;true
+457-902-201;;;Mom;;;Skyler;;;White;;;Albaqurque 67;;;true
+000-000-000;;;Padme;;;Padme;;;Amidala;;;Naboo;;;true
+456-321-765;;;Hank;;;Hank;;;Schrader;;;Albaqurque 678;;;false
+000-111-222;;;Lord Vader;;;Anakin;;;Skywalker;;;Death Star;;;false
+875-345-712;;;Marie;;;Marie;;;Schrader;;;Albaqurque 678;;;false
+645-321-712;;;Mike;;;Mike;;;Don't remember actually..;;;Yeah...;;;false
+456-324-678;;;Tuco;;;Tuco;;;Salamanka;;;Desert;;;false

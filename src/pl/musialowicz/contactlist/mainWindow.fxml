@@ -1,0 +1,111 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<BorderPane fx:id="mainWindow" fx:controller="pl.musialowicz.contactlist.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+    <top>
+       <BorderPane>
+           <right>
+               <ToolBar>
+                   <Button onAction="#exitProgram">
+                       <tooltip>
+                           <Tooltip text="Press to exit program..."/>
+                       </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@/toolbarButtonGraphics/general/Stop24.gif"/>
+                            </ImageView>
+                        </graphic>
+                   </Button>
+               </ToolBar>
+           </right>
+           <left>
+               <HBox spacing="10">
+                   <padding>
+                       <Insets top="10" left="35"/>
+                   </padding>
+                   <fx:define>
+                       <ToggleGroup fx:id="filterOptions"/>
+                   </fx:define>
+                   <RadioButton fx:id="displayAllRadioButton" text="Display all contacts" toggleGroup="$filterOptions"
+                                selected="true" onAction="#filterListView"/>
+                   <RadioButton fx:id="displayHighlightedRadioButton" text="Display only highlighted contacts" toggleGroup="$filterOptions"
+                                onAction="#filterListView"/>
+                   <RadioButton fx:id="displayUnhighlightedRadioButton" text="Display only unhighlighted contacts" toggleGroup="$filterOptions"
+                                onAction="#filterListView"/>
+               </HBox>
+           </left>
+       </BorderPane>
+    </top>
+    <left>
+        <ListView fx:id="listViewOfContacts" prefWidth="290" onKeyReleased="#deleteContactByKey"/>
+    </left>
+    <center>
+            <TextArea fx:id="contactDetailsTextArea" mouseTransparent="true" editable="false" style="-fx-text-alignment: center"
+                      wrapText="true"/>
+    </center>
+    <bottom>
+        <VBox spacing="3">
+            <HBox spacing="3">
+                <Button text="Add new contact " onAction="#addNewContact">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/toolbarButtonGraphics/development/WebComponent24.gif"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button text="  Remove contact    " fx:id="removeContactButton" onAction="#removeContact">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/toolbarButtonGraphics/development/ApplicationDeploy24.gif"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label fx:id="contactCountLabel">
+                    <padding>
+                        <Insets left="20" top="10"/>
+                    </padding>
+                </Label>
+                <Label fx:id="importantContactCountLabel">
+                    <padding>
+                        <Insets left="20" top="10"/>
+                    </padding>
+                </Label>
+            </HBox>
+            <HBox spacing="3">
+                <Button text="Highlight contact" onAction="#setImportantToTrue">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/toolbarButtonGraphics/general/Preferences24.gif"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button text="Unhighlight contact" onAction="#setImportantToFalse">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/toolbarButtonGraphics/general/Import24.gif"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Label text="Application made by Michal Musialowicz." style="-fx-font-weight: bold; -fx-font-style: italic;">
+                    <padding>
+                        <Insets left="60" top="10"/>
+                    </padding>
+                </Label>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>

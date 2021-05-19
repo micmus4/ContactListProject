@@ -1,0 +1,29 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<DialogPane fx:controller="pl.musialowicz.contactlist.editContactController"
+            xmlns:fx="http://javafx.com/fxml">
+        <content>
+            <GridPane>
+                <Label text="Phone number: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Label text="Nickname: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <Label text="First Name: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <Label text="Last Name: " GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <Label text="Address: " GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                <TextField fx:id="phoneNumberTextField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <TextField fx:id="nicknameTextField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <TextField fx:id="firstNameTextField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                <TextField fx:id="lastNameTextField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                <TextField fx:id="addressTextField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+                <Label text="" GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+                <Label text="Highlighted contact:    " GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                <CheckBox fx:id="importantContactCheckBox" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+                <Label text="" GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+                <Label fx:id="editedAddedOrNotLabel" text="" GridPane.rowIndex="9" GridPane.columnIndex="0"
+                       GridPane.columnSpan="2"/>
+            </GridPane>
+        </content>
+</DialogPane>
