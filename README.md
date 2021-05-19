@@ -15,9 +15,13 @@ The program gives you plenty of posibilities:
     - 2. display only highlighted contacts
     - 3. display only unhighlighted contacts
  - you can see the statistics - how many contacts do you have and also how many highlighted contacts do you have
+ - it saves all contacts to database.txt file, if it doesn't exist, it will create an empty file.
+
+
 
 
 How to use this program:
+
  - you can click at contact with right mouse button and delete/edit contact
  - add, delete, highlight, unhighlight contacts by usuing buttons at the left bottom of the screen
  - pick radiobutton at the top which changes what contacts will be displayed in the list
