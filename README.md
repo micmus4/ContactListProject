@@ -31,3 +31,6 @@ How to use this program:
 
 
 !!! ALL THE DATA IS SAVED TO "database.txt" FILE.
+
+![18be762c3cbb232a7f6701916e19815c](https://user-images.githubusercontent.com/71464021/118996816-7b48ee00-b988-11eb-999e-bc0b4e035e10.png)
+
